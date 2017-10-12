@@ -144,7 +144,7 @@ button.close, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focu
   width: 100%;
   border-radius: 20px;
 }
-#headline {
+.headline {
   text-align: center;
   font-family: 'Eagle Lake', cursive;
   padding-bottom: 25px;
@@ -164,7 +164,43 @@ button.close, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focu
  form {
   color: white;
  } 
+ .scrollToTop:hover {
+  text-decoration:none;
+}
+ .scrollToTop{
+  width:47px; 
+  height:47px;
+  position:fixed;
+  bottom:75px;
+  right:40px;
+  display:none;
+  font-size: 10px;
+  background-image: url("../static/images/arrowup1.png");
+}
 
+#submitbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+#aboutdivison {
+  margin-bottom: 15px;
+  background-color: rgba(238, 238, 238, 0.2);
+  border-radius: 20px;
+  color: white;
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: 0.05em;
+  text-align: justify;
+  padding: 10px;
+  opacity: 0;
+  font-size: 18px;
+}
+#AboutDivFlex {
+  display: flex;
+  justify-content: center
+}
 @media screen and (max-width: 400px) {
  body {
    background-image: url("../static/images/mobile01.jpg");
@@ -254,8 +290,111 @@ button.close, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focu
  width: 30px;
  height: 30px;
 }
-
-
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.tababout {
+  color: white;
+  letter-spacing: 0px;
+  width: 130px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 16px;
+ }
+ .nav-tabs > li.active >a.tababout {
+  background-color: transparent;
+  color: white;
+ }
+.nav > li > a.tababout:hover {
+  background-color: rgba(238, 238, 238, 0.2);
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+.nav > li > ul.dropdownabout { 
+  background-color: rgba(238, 238, 238, 0.8);
+  min-width: 0px; 
+  width:130px;
+  text-align: center;
+  text-align: center;
+}
+.nav > li > ul.dropdownabout > li > a {
+  color: #514646;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 10px;
+}
+.nav > li > ul.dropdownabout > li > a:hover {
+  color:black; 
+  background-color: white;   
+}
+.nav > li > a.LARPgeartab {
+  background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  width: 250px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 20px;
+}
+.nav > li > a.LARPgeartab:hover {
+  background-color: transparent;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+.nav > li > a.gallerytab {
+  background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  width: 250px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 20px;
+}
+.nav > li > a.gallerytab:hover {
+  background-color: transparent;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+.navclick > li.active > a:focus {
+  background-color: transparent;
+  color: white;
+}
+.nav > li > a.WhatisLARPtab {
+  background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  width: 250px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 20px;
+}
+.nav > li > a.WhatisLARPtab:hover {
+  background-color: rgba(238, 238, 238, 0.2);
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+.nav > li > ul.dropdownLARP {
+  background-color: rgba(238, 238, 238, 0.8); 
+  width: 250px;
+  text-align: center;
+}
+.nav > li > ul.dropdownLARP > li > a {
+  color: #514646;
+  font-family: 'Eagle Lake', cursive;
+}
+.nav > li > ul.dropdownLARP > li > a:hover {
+  color:black; 
+  background-color: white;   
+}
+.nav > li > a.contacttab {
+  background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  width: 250px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 20px;
+}
+.nav > li > a.contacttab:hover {
+  background-color: transparent;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
 @media screen and (min-width: 401px) {
 	#nav-mobile {
 		display: none;
@@ -265,19 +404,119 @@ button.close, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focu
    height: 45px;
  }
  #big {
+   opacity: 0;
    font-size: 90px;
    margin-top: 290px;
  }
  #sub {
    font-size: 20px;
  }	
- .navbar {
-
- }
  .item a {
    margin-top: 5px;
    font-size: 25px;
    color: #FFFFFF;
    font-family: 'Eagle Lake', cursive; 
  }
+ .tababout {
+  color: white;
+  letter-spacing: 3px;
+  width: 250px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 25px;
+ }
+ .nav-tabs > li.active >a.tababout {
+  background-color: transparent;
+  color: white;
+ }
+.nav > li > a.tababout:hover {
+  background-color: rgba(238, 238, 238, 0.2);
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+.nav > li > ul.dropdownabout { 
+  background-color: rgba(238, 238, 238, 0.8); 
+  width: 250px;
+  text-align: center;
+}
+.nav > li > ul.dropdownabout > li > a {
+  color: #514646;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 13px;
+}
+.nav > li > ul.dropdownabout > li > a:hover {
+  color:black; 
+  background-color: white;   
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.nav > li > a.LARPgeartab {
+  background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  width: 300px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 25px;
+}
+.nav > li > a.LARPgeartab:hover {
+  background-color: transparent;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+.nav > li > a.WhatisLARPtab {
+  background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  width: 250px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 25px;
+}
+.nav > li > a.WhatisLARPtab:hover {
+  background-color: rgba(238, 238, 238, 0.2);
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+.nav > li > ul.dropdownLARP {
+  background-color: rgba(238, 238, 238, 0.8); 
+  width: 250px;
+  text-align: center;
+}
+.nav > li > ul.dropdownLARP > li > a {
+  color: #514646;
+  font-family: 'Eagle Lake', cursive;
+}
+.nav > li > ul.dropdownLARP > li > a:hover {
+  color:black; 
+  background-color: white;   
+}
+.nav > li > a.gallerytab {
+  background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  width: 250px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 25px;
+}
+.nav > li > a.gallerytab:hover {
+  background-color: transparent;
+  border-radius: 4px 4px 0 0;
+  color: white;
+}
+.navclick > li.active > a:focus {
+  background-color: transparent;
+  color: white;
+}
+.nav > li > a.contacttab {
+  background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  width: 250px;
+  font-family: 'Eagle Lake', cursive;
+  font-size: 25px;
+}
+.nav > li > a.contacttab:hover {
+  background-color: transparent;
+  border-radius: 4px 4px 0 0;
+  color: white;
 }
